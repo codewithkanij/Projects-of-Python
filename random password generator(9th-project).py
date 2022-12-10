@@ -9,6 +9,7 @@ import random
 
 characters = list(string.ascii_letters + string.digits + "!@#$%^&*()")
 
+
 def generate_password():                                                       # function define
     password_length = int(input("How long would you like your password to be? "))
 
@@ -26,9 +27,7 @@ def generate_password():                                                       #
     print(password)
 
 
-option  = input("Do you want to generate a password ? (Yes/No)")
-
-
+option = input("Do you want to generate a password ? (Yes/No)")
 
 
 if option == "Yes":

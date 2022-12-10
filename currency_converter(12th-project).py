@@ -3,7 +3,7 @@ def main():
     print()                # print a blank line
 
 
-    dollars = eval(input("Enter amount in dollars: "))   # eval eta kno use korche???
+    dollars = eval(input("Enter amount in dollars: "))            # eval eta kno use korche???
 
     pounds = convert_to_pounds(dollars)
 

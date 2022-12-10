@@ -4,24 +4,31 @@
 # sms marketing for various things right there but they have also api which developers can use to send text messeges
 # for install request library type terminal : pip install requests then press ENTER
 
+
 from credentials import mobile_number          # credentials.py file ta theke mobile number ta import korbe.
 import requests
+import schedule
+import time
+
+
 def send_message():
-    resp = requests.post('https://textbelt.com/text',{      # this is a text belt website which was sending or posting our data
+    resp = requests.post('https://textbelt.com/text',{
         'phone': mobile_number,
         'message': 'hey,Good Morning!',
         'key': 'textbelt',
     })
 
-    print(resp.json())   # we wnt to print the result as in the json format basically
-
-send_message()
+    print(resp.json())
 
 
-print('sent message successfully')
+# schedule.every().day.at('06:00').do(send_message)
+
+schedule.every(10).seconds.do(send_message)                # after every 10 seconds this message will send
 
 
+while True:
+    schedule.run_pending()
+    time.sleep(1)
 
-# {'success': False, 'error': 'Your phone number was not provided in E.164 format, or free SMS are disabled for this country'}
 
 

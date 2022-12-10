@@ -17,4 +17,4 @@ def main(url):
 print("This is a site connectivity program")
 input_url = input("Input the url of the site you want to check: ")
 
-main(input_url)   # ekhane bracket er vitor sudhu 'url' na hoye 'input_url' kno hoiche???
+main(input_url)                    # ekhane bracket er vitor sudhu 'url' na hoye 'input_url' kno hoiche???

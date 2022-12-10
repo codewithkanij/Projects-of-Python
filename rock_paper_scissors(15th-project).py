@@ -8,7 +8,6 @@ user_action = input()
 computer_action = random.choice(options)
 
 
-
 def game(user_action,computer_action):
     user_points = 0
     computer_points = 0

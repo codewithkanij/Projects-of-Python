@@ -14,7 +14,9 @@ def email_slicer():
     print("domain: ",domain)
     print("extension: ",extension)
 
+
 while True:
     email_slicer()
+
 
 
