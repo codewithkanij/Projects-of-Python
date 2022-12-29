@@ -2,9 +2,8 @@
 #  doesn't need to install)
 # import image
 # open up the image we want to resize using python
-
-
 # resize kora picture ta folder a save hoye jabe
+
 
 from PIL import Image
 

@@ -1,8 +1,8 @@
-# first of all install pydictionary.process:if you are on mac type "pip3 intall PyDictioary" then press ENTER
-# if you are on windows type "pip install PyDictionary" then press ENTER
+# first of all install pydictionary.process:if you are on Mac type "pip3 intall PyDictioary" then press ENTER
+# if you are on Windows type "pip install PyDictionary" then press ENTER
 
 
-from PyDictionary import PyDictionary                          # PyDictionary install korte parchina..........
+from PyDictionary import PyDictionary
 
 dictionary = PyDictionary()
 

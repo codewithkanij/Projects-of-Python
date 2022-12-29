@@ -1,6 +1,6 @@
 # ROCK-PAPER-SCISSORS Game
 
-import random
+"""import random
 
 options = ["rock","paper","scissors"]
 print("What do you want to choose? rock , paper , scissors or exit ?")
@@ -68,3 +68,49 @@ game(user_action,computer_action)
 
 
 #             ...............................infinity hocche....................................
+
+
+
+
+
+
+
+
+
+
+"""
+
+# --------------------------------------Done--------------------------------------------
+
+
+import random
+
+
+def play():
+    user = input("What's your choice? 'r' for rock, 'p' for paper, 's' for scissors \n")
+    computer = random.choice(['r', 'p', 's'])
+
+    if user == computer:
+        return 'It\'s tie'
+
+    # r > s, s > p, p > r (meaning that rock beats scissors, scissors beats paper,  paper beats rock)
+    if is_win(user, computer):
+        return 'You won!'
+
+    return 'You lost!'
+
+
+def is_win(player,opponent):
+    # return true if player wins
+    # r > s, s > p, p > r
+    if (player == 'r' and opponent == 's') or (player == 's' and opponent == 'p')\
+     or (player == 'p' and opponent == 'r'):
+        return True
+
+
+print(play())
+
+
+
+
+
